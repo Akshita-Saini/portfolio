@@ -24,7 +24,7 @@ body {
 }
 /** container **/
 .container {
-    padding: 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .container-center {
@@ -200,7 +200,7 @@ li{
 }
 
 .bar{
-    background-color:var(--grey);
+    background-color:var(--off-white);
     width:100%;
     border-radius:1rem;
 
