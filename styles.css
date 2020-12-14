@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+/** CSS variables**/
+:root {
+    --primary-color: #66FCF1;
+    --secondary-color: #45A29E;
+    --tertiary-color: #1F2833;
+    --grey: #C5C6C7;
+    --black: #0B0C10;
+    --off-white:#F9FAFB;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+    background-color: var(--tertiary-color);
+}
+
+/** typography **/
+
+.imp{
+    color:var(--primary-color);
+    font-weight: bolder;
+}
+/** container **/
+.container {
+    padding: 2rem 2rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    border:1px solid var(--secondary-color);
+    border-radius:1rem;
+    color:var(--grey);
+}
+
+hr {
+    margin: 2rem;
+}
+
+/** links **/
+/** padding: top right bottom left
+if only top and right are given then top is applied to bottom too and right is applied to left too 
+BEM - css naming covention writing link-primary and link-secondary instead of primary-link and secondary-link **/
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--secondary-color);
+    color:var(--off-white);
+    border-radius: 0.5rem;
+}
+
+.link-secondary {
+    background-color: var(--tertiary-color);
+    color: var(--grey);
+    border-radius: 0.5rem;
+}
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--black);
+    color: var(--grey);
+    padding: 1rem;
+
+}
+
+.navigation .link {
+    color:var(--primary-color);
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    border:1px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+
+/** header **/
+.header {
+    padding: 2rem;
+    margin:1rem 1;
+}
+
+.header .header-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.header .header-heading {
+    color: var(--grey);
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+.inline-icon{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.header .header-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/** sections **/
+
+.section{
+    padding: 2rem;
+}
+.section h2 {
+    text-align: center;
+    color:var(--primary-color);
+    font-weight: lighter;
+    font-size:2rem
+}
+
+.section-inverted{
+    background-color: var(--secondary-color);
+}
+
+.section-inverted .container-center{
+    max-width: 600px;
+    margin: auto;
+    border:1px solid var(--tertiary-color);
+    border-radius:1rem;
+    color:var(--off-white);
+}
+.section-inverted h2{
+    text-align: center;
+    color:var(--tertiary-color);
+    font-size:2rem;
+    font-weight: normal;
+}
+
+.container p{ 
+    font-size: 1.2rem;
+}
+
+
+/** footer **/
+
+.footer{
+    background-color: var(--black);
+    padding:2rem 1rem;
+    color:var(--primary-color);
+    text-align:center;
+    border-top-right-radius:1rem;
+}
+
+.footer .link{
+    color:var(--off-white);
+}
+
+.footer .footer-header{
+    font-size: large;
+    font-weight: bold;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li{
+    color:var(--tertiary-color);
+    padding:0.5rem;
+}
+
+.bar{
+    background-color:var(--grey);
+    width:100%;
+    border-radius:1rem;
+
+}
+.skill{
+    color:var(--grey);
+    background-color:var(--tertiary-color);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.html, .php{
+    width: 80%;
+}
+
+.css{
+    width:70%;
+}
+
+.js, .sql, .java{
+    width:75%;
+}
+
+.react{
+    width:50%;
+}
+
