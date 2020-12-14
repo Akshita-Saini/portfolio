@@ -171,7 +171,7 @@ BEM - css naming covention writing link-primary and link-secondary instead of pr
 
 .footer{
     background-color: var(--black);
-    padding:1rem 1rem 0.5rem 1rem;
+    padding:1rem 1rem 0rem 1rem;
     color:var(--primary-color);
     text-align:center;
     border-top:1px solid var(--secondary-color);
@@ -184,8 +184,12 @@ BEM - css naming covention writing link-primary and link-secondary instead of pr
 .footer .footer-header{
     font-size: large;
     font-weight: bold;
+    padding:0rem 1rem 0rem 1rem;
 }
 
+.footer h3{
+    font-weight: lighter;
+}
 ul {
     padding-inline-start: 0px;
 }
@@ -222,5 +226,11 @@ li{
 
 .react{
     width:50%;
+}
+
+.social-links .list-item-inline a img:hover{
+    background-color: var(--off-white);
+    border:1px solid;
+    border-radius:0.5rem;
 }
 
