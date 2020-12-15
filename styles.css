@@ -281,3 +281,7 @@ h1{
     display:block;
     margin:auto;
 }
+
+.margin-fix{
+    padding: 1rem 1rem 2rem 1rem;
+}
